@@ -1,0 +1,64 @@
+@import '../../../../styles/colors.scss';
+@import'../../../../../styles.scss';
+
+.auth-container {
+    display: flex;
+    height: 100vh; // 100% da altura da tela
+}
+
+.image-container {
+    width: 50%;
+    height: 100vh; // 100% da altura da tela
+    background-color: $primary-color;
+}
+
+.login-container {
+    width: 50%;
+    height: 100vh; // 100% da altura da tela
+    display: flex;
+    align-items: center; // Centralizar verticalmente
+    justify-content: center; // Centralizar horizontalmente
+}
+
+.login-form {
+    width: 75%;
+    height: 50%;
+    margin: 20% auto; // Centralizar
+    padding: 20px; // Espaçamento superior
+    border: 1px solid $secondary-color;
+    border-radius: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid $secondary-color;
+    border-radius: 8px;
+}
+
+.form-group-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.form-group-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+button {
+  width: 100%;
+  padding: 1.25rem;
+  border: 1px solid $primary-color;
+  border-radius: 8px;
+  background-color: $primary-color;
+  font-size: 1rem;
+  color: $primary-white;
+  cursor: pointer;
+}
+
+
+
