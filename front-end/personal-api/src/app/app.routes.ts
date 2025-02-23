@@ -1,9 +1,14 @@
 import { Routes } from '@angular/router';
-import { AuthComponent } from './modules/auth/components/auth-access/auth.component';
+
 
 export const routes: Routes = [
-    {
-        path: '',
-        component: AuthComponent
-    }
+  {
+    path: 'auth',
+    loadChildren: () => import('./modules/auth/auth.routes').then(m => m.AUTH_ROUTES) // Carrega as rotas do auth
+  },
+  {
+    path: '',
+    redirectTo: 'auth',
+    pathMatch: 'full'
+  }
 ];
